@@ -12,7 +12,7 @@ namespace TOKENDEMO.Models
         public string Email { get; set; }
         [Required]
         public string Username { get; set; }
-        [Required]
+        [Required(ErrorMessage ="name is required")]
         public string Password { get; set; }
         public string Role { get; set; }
         public string ? RefreshToken { get; set; }
