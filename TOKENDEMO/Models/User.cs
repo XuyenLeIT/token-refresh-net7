@@ -8,7 +8,7 @@ namespace TOKENDEMO.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
-        [Required]
+        [Required(ErrorMessage = "email is required")]
         public string Email { get; set; }
         [Required]
         public string Username { get; set; }
